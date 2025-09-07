@@ -3,7 +3,6 @@
       "version": "0.1.0",
       "private": true,
       "dependencies": {
-            "@eslint/js": "*",
             "@radix-ui/react-accordion": "^1.2.3",
             "@radix-ui/react-alert-dialog": "^1.1.6",
             "@radix-ui/react-aspect-ratio": "^1.1.2",
@@ -31,13 +30,10 @@
             "@radix-ui/react-toggle-group": "^1.1.2",
             "@radix-ui/react-tooltip": "^1.1.8",
             "@typescript-eslint/eslint-plugin": "*",
-            "class-variance-authority": "^0.7.1",
             "clsx": "*",
             "cmdk": "^1.1.1",
             "date-fns": "^2.30.0",
             "embla-carousel-react": "^8.6.0",
-            "eslint-plugin-react-hooks": "*",
-            "eslint-plugin-react-refresh": "*",
             "firebase": "^12.2.1",
             "globals": "*",
             "input-otp": "^1.4.2",
@@ -52,20 +48,14 @@
             "react-resizable-panels": "^2.1.7",
             "recharts": "^2.15.2",
             "sonner": "^2.0.3",
-            "tailwind-merge": "*",
             "vaul": "^1.1.2",
             "vite": "*"
       },
       "devDependencies": {
-            "@types/node": "^20.19.13",
             "@types/react": "^19.1.12",
-            "@types/react-dom": "^19.1.9",
-            "@vitejs/plugin-react": "^5.0.2",
-            "@vitejs/plugin-react-swc": "^3.10.2",
             "firebase-tools": "^14.15.2",
             "rollup-plugin-visualizer": "^6.0.3",
             "vite": "6.3.5",
-            "vite-plugin-pwa": "^1.0.3",
             "vite-tsconfig-paths": "^5.1.4"
       },
       "scripts": {
@@ -75,8 +65,43 @@
             "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
             "typecheck": "tsc --noEmit",
             "deploy": "npm run build && firebase deploy",
-            "vercel-build": "npm run build"
+            "vercel-build": "npm run build",
+            "start": "vite preview --port 3000"
       },
+      "prettier": {
+            "semi": false,
+            "singleQuote": true,
+            "trailingComma": "es5",
+            "printWidth": 100,
+            "tabWidth": 2
+      },
+      "bundleDependencies": [
+            "@radix-ui/react-accordion",
+            "@radix-ui/react-alert-dialog",
+            "@radix-ui/react-avatar",
+            "@radix-ui/react-dialog",
+            "@radix-ui/react-dropdown-menu",
+            "@radix-ui/react-hover-card",
+            "@radix-ui/react-label",
+            "@radix-ui/react-navigation-menu",
+            "@radix-ui/react-popover",
+            "@radix-ui/react-scroll-area",
+            "@radix-ui/react-select",
+            "@radix-ui/react-slot",
+            "@radix-ui/react-tabs",
+            "@radix-ui/react-toast",
+            "@radix-ui/react-tooltip",
+            "class-variance-authority",
+            "clsx",
+            "lucide-react",
+            "next-themes",
+            "react",
+            "react-dom",
+            "react-hook-form",
+            "sonner",
+            "tailwind-merge",
+            "tailwindcss-animate"
+      ],
       "engines": {
             "node": ">=18.0.0",
             "npm": ">=8.0.0"

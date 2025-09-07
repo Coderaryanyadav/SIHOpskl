@@ -5,7 +5,8 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "build"
+        "distDir": "dist",
+        "outputDirectory": "dist"
       }
     }
   ],
@@ -21,10 +22,44 @@
       }
     },
     {
-      "src": "/workbox-(.*).js",
+      "src": "^/static/(.*)",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "^/workbox-(.*).js",
       "headers": {
         "cache-control": "public, max-age=0, must-revalidate"
       }
+    },
+    {
+      "src": "^/service-worker.js",
+      "headers": {
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "continue": true
+    },
+    {
+      "src": "^/precache-manifest\\.(.*)\\.js$",
+      "headers": {
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "continue": true
+    },
+    {
+      "src": "^/logo(\\.\\w+)?\\.(png|jpe?g|gif|svg|ico)$",
+      "headers": {
+        "cache-control": "public, max-age=31536000, must-revalidate"
+      },
+      "continue": true
+    },
+    {
+      "src": "^/(.*)\\.(css|js|wasm|woff2|woff|ttf|eot)$",
+      "headers": {
+        "cache-control": "public, max-age=31536000, must-revalidate"
+      },
+      "continue": true
     }
   ],
   "build": {
