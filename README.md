@@ -1,6 +1,12 @@
 
 # Tinder for Work App (Community) [![PWA Ready](https://img.shields.io/badge/PWA-Ready-673ab8.svg)](https://web.dev/progressive-web-apps/) [![Vite](https://img.shields.io/badge/vite-4.4.0-646CFF.svg)](https://vitejs.dev/) [![React](https://img.shields.io/badge/React-18.2-61DAFB.svg)](https://reactjs.org/)
 
+Company Vision : Ma
+Company Mission : Helping open Skill 
+scroll platform no swipe
+Mission: To create a trusted platform that connects individuals seeking work with verified short-term employment opportunities, while enabling businesses to access reliable, on-demand talent with efficiency and transparency.
+
+Vision: To become India’s leading open-skill workforce network, transforming the way millions earn and businesses hire by building a scalable, inclusive, and trusted ecosystem for flexible work.
 A modern Progressive Web Application (PWA) for job matching, built with React, TypeScript, and Vite. This app provides a Tinder-like interface for job seekers and employers to connect.
 
 ✨ **Key Features**

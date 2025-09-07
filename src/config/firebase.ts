@@ -2,14 +2,16 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
+// Firebase configuration - only including necessary fields
 const firebaseConfig = {
-  apiKey: "AIzaSyCdN0bYfnR-0B1DpU6v8AvLk0Ez2R2vRV0",
-  authDomain: "sih-opskl-5ff32.firebaseapp.com",
-  projectId: "sih-opskl-5ff32",
-  messagingSenderId: "499617953813",
-  appId: "1:499617953813:web:82c720e3b61746d463361c"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
