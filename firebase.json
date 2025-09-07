@@ -82,7 +82,7 @@
     ]
   },
   "storage": {
-    "rules": "storage.rules"
+    "rules": "y"
   },
   "emulators": {
     "auth": {
