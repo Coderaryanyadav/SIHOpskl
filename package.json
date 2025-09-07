@@ -60,7 +60,7 @@
       },
       "scripts": {
             "dev": "vite",
-            "build": "tsc && vite build --mode production",
+            "build": "tsc && vite build --mode production --outDir dist",
             "preview": "vite preview --port 3000",
             "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
             "typecheck": "tsc --noEmit",

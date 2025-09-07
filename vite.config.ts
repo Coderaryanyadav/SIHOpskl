@@ -63,7 +63,8 @@ export default defineConfig(({ mode }): UserConfig => {
       },
     },
     build: {
-      outDir: 'build',
+      outDir: 'dist',
+      emptyOutDir: true,
       sourcemap: isProduction ? 'hidden' : true,
       chunkSizeWarningLimit: 2000,
       minify: isProduction ? 'esbuild' : false,
