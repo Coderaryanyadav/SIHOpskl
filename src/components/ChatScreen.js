@@ -1,6 +1,6 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { useState, useEffect, useRef } from 'react';
-import { motion } from 'motion/react';
+import { motion } from "framer-motion";
 import { Search, Send, MoreVertical, Briefcase, Loader2, AlertTriangle, MessageSquare } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';

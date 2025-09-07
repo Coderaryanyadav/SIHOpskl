@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion } from "framer-motion";
 import { X, MapPin, Clock, Calendar, Star, Building } from 'lucide-react';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';

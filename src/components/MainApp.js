@@ -1,6 +1,6 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from "framer-motion";
 import { Home, Briefcase, MessageCircle, User, Bell, Plus, BarChart3, LogOut, Moon, Sun } from 'lucide-react';
 import { Button } from './ui/button';
 import { SwipeInterface } from './SwipeInterface';

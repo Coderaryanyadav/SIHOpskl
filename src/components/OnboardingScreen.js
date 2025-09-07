@@ -1,6 +1,6 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight, ChevronLeft, Zap, Users, Star, MapPin } from 'lucide-react';
 import { Button } from './ui/button';
 const onboardingSteps = [

@@ -1,6 +1,6 @@
 import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from "framer-motion";
 import { Bell, Heart, MessageCircle, Briefcase, Star, Calendar, CheckCircle2, Clock, Check, BellOff } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card } from './ui/card';

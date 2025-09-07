@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion } from 'motion/react';
+import { motion } from "framer-motion";
 import { X, MapPin, DollarSign, Clock, Filter } from 'lucide-react';
 import { Button } from './ui/button';
 import { Slider } from './ui/slider';

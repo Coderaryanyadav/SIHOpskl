@@ -1,5 +1,5 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { motion } from 'motion/react';
+import { motion } from "framer-motion";
 import { X, MapPin, Clock, Calendar, Star, Building } from 'lucide-react';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';

@@ -1,6 +1,6 @@
 import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
 import { useState, useEffect, useRef } from 'react';
-import { motion } from 'motion/react';
+import { motion } from "framer-motion";
 import { User, Edit, Star, MapPin, Award, Camera, Mail, Phone, Calendar, Briefcase, Settings, Loader2, X } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';

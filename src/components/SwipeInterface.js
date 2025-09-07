@@ -1,6 +1,6 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { useState, useRef, useEffect, useCallback } from 'react';
-import { motion, useMotionValue, useTransform, AnimatePresence } from 'motion/react';
+import { motion, useMotionValue, useTransform, AnimatePresence } from "framer-motion";
 import { X, Heart, MapPin, Clock, DollarSign, Filter as FilterIcon, Bookmark, Loader2, Search, XCircle, Briefcase } from 'lucide-react';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';

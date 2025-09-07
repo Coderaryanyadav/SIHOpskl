@@ -1,5 +1,5 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { motion } from 'motion/react';
+import { motion } from "framer-motion";
 import { Calendar, DollarSign, TrendingUp, Clock, Award, MapPin, Briefcase, Star } from 'lucide-react';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
