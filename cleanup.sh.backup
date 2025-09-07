@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Stop any running processes
+echo "Stopping any running processes..."
+pkill -f "node|npm|vite|vercel" || echo "No processes to stop"
+
+# Remove node_modules and lock files
+echo "Cleaning up node modules and build artifacts..."
+rm -rf node_modules
+rm -f package-lock.json
+rm -f pnpm-lock.yaml
+rm -f yarn.lock
+
+# Remove build directories
+echo "Removing build directories..."
+rm -rf build
+rm -rf dist
+rm -rf .vercel
+
+# Remove cache directories
+echo "Clearing cache..."
+rm -rf .vite
+rm -rf .next
+
+# Install fresh dependencies
+echo "Installing fresh dependencies..."
+npm install
+
+# Create production build
+echo "Creating production build..."
+npm run build
+
+echo "\n✅ Cleanup complete! The project is ready for deployment."
+echo "Run 'npx vercel --prod' to deploy to Vercel."
